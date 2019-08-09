@@ -108,7 +108,7 @@ sleep 1
 ##初始化站点信息
 echo -e "${Info} 正在配置站点基本信息"
 cd /www/wwwroot/$website
-cp config/.config.php.for7color config/.config.php
+cp config/.config.example.php config/.config.php
 sed -i "s/websiteurl/$website/g" /www/wwwroot/$website/config/.config.php
 sed -i "s/sspanel-mukey/$sspanelmukey/g" /www/wwwroot/$website/config/.config.php
 sed -i "s/sspanel-db-databasename/$mysqldatabase/g" /www/wwwroot/$website/config/.config.php
